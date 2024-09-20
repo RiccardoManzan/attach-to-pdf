@@ -1,4 +1,7 @@
 #!/bin/bash
 
-./src/initialize.sh
-./src/attach-to-pdf $@
+parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+cd "$parent_path"
+
+source ./src/initialize.sh
+python ./src/attach-to-pdf.py $@
