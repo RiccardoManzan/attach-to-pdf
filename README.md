@@ -6,14 +6,17 @@ I know this has some bugs, i've fonund these ones, which looks depend on the und
 * Attaching files to a pdf with already attached files may result in corrupting existing files.
 
 ## Installation
-Just clone this somewhere, add the root directory to path and launch the tool with `attach-to-pdf [options]`, the script will generate automatically a venv and will install the required dependencies at first run.
+Just clone this somewhere, register this to the `.bashrc` or `.profile` script by using the command:
 
+```bash
+source ~/path/to/folder/index.bash
+```
 That's it, enjoy!
 
+## Usage
+Launch the tool with `attach-to-pdf [options]`, the script will generate automatically a venv and will install the required dependencies at first run.
+
+See cmd help for details regarding the options.
+
 ## License
-This program is offered under a commercial and under the AGPL license.
-AGPL licensing: This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
-
-Please, refer to [this page](https://www.gnu.org/licenses/) fot a copy od the GNU Affeo General Public License.
+See the [LICENSE file](./LICENSE)
