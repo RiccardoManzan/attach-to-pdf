@@ -1,7 +1,11 @@
 #!/bin/bash
 
+ORIG=$PWD
+
+
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 cd "$parent_path"
 
 source ./src/initialize.sh
-python ./src/attach-to-pdf.py $@
+echo $@
+python ./src/attach-to-pdf.py "$@" --rel "$ORIG"
